@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --background-color: hsl(0, 0%, 8%);
+  --container-color:hsl(0, 0%, 12%);
+  --buttons-color:hsl(0, 0%, 20%);
+  --color:hsl(0, 0%, 100%);
+  --hover-color:hsl(75, 94%, 57%);
+}
+body{
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+.container{
+  /* margin: 100px auto;
+  background-color: var(--container-color);
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; */
+ 
+  margin: 100px auto;
+  background-color: var(--container-color);
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.profile-section{
+  margin: 20px 0;
+}
+.user-photo img{
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+border-radius: 50%;
+}
+.name h2{
+  font-weight: 500;
+  margin: 10px;
+text-align: center;
+}
+.location{
+  color: var(--hover-color);
+}
+.location p{
+ font-weight: 400;
+ font-size: 14px;
+}
+.profession p{
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+p{
+  text-align: center;
+  margin: 10px;
+}
+.btns{
+display: flex;
+flex-direction: column;
+padding: 5px;
+}
+button{
+  padding: 10px;
+  margin: 5px;
+  background-color:var(--buttons-color);
+   color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--hover-color);
+    color:#000000;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .user-photo img {
+    width: 70px;
+  }
+
+  .name h2 {
+    font-size: 20px;
+  }
+
+  .profession p,
+  .location p {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .user-photo img {
+    width: 60px;
+  }
+
+  .name h2 {
+    font-size: 18px;
+  }
+
+  .profession p,
+  .location p {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 9px;
+  }
+}
+  
